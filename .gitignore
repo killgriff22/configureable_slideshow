@@ -1,0 +1,14 @@
+*mp4
+*webm
+*jpg
+*png
+*jpg
+*gif
+*svg
+*ico
+*jpeg
+env
+*.json
+path
+metadata/*
+*pyc

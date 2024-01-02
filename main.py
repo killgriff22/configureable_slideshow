@@ -4,7 +4,8 @@ masterPath = config['Master Folder Path']
 #delay = input("delay between images (seconds): ")
 images = []
 for file in os.listdir(masterPath):
-    if file.endswith(".jpg") or file.endswith(".png"):
+    img=file
+    if img.endswith(".jpg") or img.endswith(".png") or img.endswith(".jpeg") or img.endswith(".gif") or img.endswith(".webp") or img.endswith(".mp4"):
         images.append(image(file))
 p = subprocess.Popen(["python3","./slideshow.py"])#,stdout=subprocess.DEVNULL)
 while True:

@@ -13,3 +13,4 @@ path
 metadata/*
 *pyc
 flood/*
+config.json

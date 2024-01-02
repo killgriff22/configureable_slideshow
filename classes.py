@@ -22,6 +22,10 @@ class image:
             if tag not in self.tags:
                 if "fetish" in tag and not "fetish" == tag and (not "fetish" in self.tags or not "fetish" in tags):
                     self.tags.append("fetish")
+                if any(subtag in tags and not subtag in self.tags for subtag in ["enf","exhibitionsim","exhibtion"]):
+                    self.tags.append("exhibitionism") if (not "exhibitionism" in self.tags and not "exhibitionism" in tags) else None
+                    self.tags.append("enf") if (not "enf" in self.tags and not "enf" in tags) else None
+                    self.tags.append("exhbition") if (not "exhibition" in self.tags and not "exhibition" in tags) else None
                 if any(subtag in tags for subtag in ["natsuki","yuri_(ddlc)","sayori","monika","ddlc","doki_doki_literature_club"]):
                     self.tags.append("ddlc") if (not "ddlc" in self.tags and not "ddlc" in tags) else None
                     self.tags.append("doki_doki_literature_club") if (not "doki_doki_literature_club" in self.tags and not "doki_doki_literature_club" in tags) else None

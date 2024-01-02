@@ -6,7 +6,7 @@ images = []
 for file in os.listdir(masterPath):
     if file.endswith(".jpg") or file.endswith(".png"):
         images.append(image(file))
-p = subprocess.Popen(["/usr/bin/python3","./slideshow.py"])#,stdout=subprocess.DEVNULL)
+p = subprocess.Popen(["python3","./slideshow.py"])#,stdout=subprocess.DEVNULL)
 while True:
     try:
         tag = input("tag: ")
